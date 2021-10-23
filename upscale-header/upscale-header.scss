@@ -3,7 +3,10 @@
 
     .header {
 		&__hamburger {
-			@include button($background-color: white);
+			@include button($background-color: transparent, $color: var(--mobileMenuIconColor));
+            img {
+                filter: invert(1);
+            }
         }
     }
 }
