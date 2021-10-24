@@ -1,26 +1,26 @@
 @import url('https://dirkds.be/fonts/butler/style.css');
 
 :host {
-    ::ng-deep upscale-aspect-ratio {
-        .headline {
-            font-family: 'Butler Medium';
-            font-size: 4.8rem;
-            font-weight: normal;
-            letter-spacing: 0.7rem;
-            -webkit-text-stroke: 0.25px;
-            color: var(--headlineColor);
+    .headline {
+        font-family: 'Butler Medium';
+        font-size: 4.8rem;
+        font-weight: normal;
+        letter-spacing: 0.7rem;
+        -webkit-text-stroke: 0.25px;
+        color: var(--headlineColor);
+        margin: 16px 0;
+    }
+    
+    .text {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.84rem;
+        &-center {
+            text-align: center;
             margin: 16px 0;
         }
-        
-        .text {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.84rem;
-            &-center {
-                text-align: center;
-                margin: 16px 0;
-            }
-        }
+    }
     
+    ::ng-deep upscale-aspect-ratio {    
         .mat-stroked-button {
             font-family: sans-serif;
             font-weight: 700;
