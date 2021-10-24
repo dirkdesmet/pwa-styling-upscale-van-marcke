@@ -4,6 +4,7 @@
     .header {
 		&__hamburger {
 			@include button($background-color: transparent, $color: var(--mobileMenuIconColor));
+            margin: 0 12px 0 3px;
             img {
                 filter: invert(1);
             }
