@@ -4,6 +4,10 @@
 			li {
 				a {
 					@include button($background-color: white, $border-radius: 2px);
+					
+					.item-icon {
+						height: 24px;
+					}
                 }
             }
         }
