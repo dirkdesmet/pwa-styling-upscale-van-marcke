@@ -1,0 +1,56 @@
+:host {
+	.storybook-background {
+		background-color: var(--componentBackgroundColor);
+	}
+
+	.disabled-link,
+	.enabled-link {
+		text-decoration: none;
+	}
+
+	.storybook-content {
+        background-color: var(--imageBackgroundColor);
+
+        upscale-aspect-ratio-image {
+            transform: translate(0, -66px);
+            margin: 30px 0 0;
+        }
+
+		.overlay {
+
+			&-content {}
+
+			&.product {
+				.product-name {
+                    font-size: 1.6rem;
+                    font-weight: 700 !important;
+                }
+
+				.price {
+					.selling-price {
+                        margin: 10px 0;
+					}
+                }
+
+				.buy-buttons {
+                    padding: 14px 10px;
+					transform: translate(0, 180px);
+                    flex-direction: row-reverse;
+
+					upscale-one-tap-buy-button {
+						max-width: calc(100% / 3 * 2);
+                        font-family: sans-serif;
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                        line-height: 42px;
+                        padding: 0 20px;
+                        margin: 0 12px 0 0;
+                        background-color: var(--buttonSecondaryBackgroundColor);
+                        border: 1px solid var(--buttonSecondaryBorderColor);
+                        color: var(--buttonSecondaryColor);
+					}
+				}
+            }
+        }
+    }
+}

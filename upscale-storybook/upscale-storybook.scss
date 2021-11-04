@@ -1,8 +1,20 @@
 :host {
+    .title {
+        @include font-size(26);
+        line-height: 1.22;
+        font-weight: 700;
+    
+        @media screen and (max-width: 56.25em) {
+            @include font-size(24);
+            line-height: 1.15;
+        }
+    }
+
 	.storyBookProgressBar {
 		display: flex;
         justify-content: center;
 		height: 5px;
+        margin: 15px 0;
 
 		span {
             flex: none;

@@ -1,0 +1,13 @@
+.attribute-details {
+
+	&__banner-headline {
+    font-family: var(--customAttributeListFont);
+  }
+
+  &__body-html {
+		.html-container {
+      font-family: var(--customAttributeListFont);
+      line-height: 1.84rem;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+:host {
+
+	.breadcrumbs {
+		&__arrow {
+			color: var(--breadcrumbsSplitterColor);
+			@include base-font-size;
+			visibility: hidden;
+			width: 10px;
+			
+			&::before {
+				content: 'keyboard_arrow_right';
+				font-family: 'Material Icons';
+				visibility: visible;
+			}
+		}
+
+		&__link {
+			@include base-font-size;
+			color: var(--breadcrumbsColor);
+			margin: 0 7px 0 0;
+		}
+
+		&__link, &__text {
+			font-family: var(--breadcrumbsFont);
+		}
+	}
+}

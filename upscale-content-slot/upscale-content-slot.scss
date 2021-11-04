@@ -13,7 +13,7 @@
 
     ::ng-deep upscale-aspect-ratio {  
         .text {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: var(--generalFont);
             line-height: 1.84rem;
             &-center {
                 text-align: center;
@@ -22,7 +22,7 @@
         }
         
         .mat-stroked-button {
-            font-family: sans-serif;
+            font-family: var(--buttonFont);
             font-weight: 700;
             font-size: 1.6rem;
             line-height: 48px;
