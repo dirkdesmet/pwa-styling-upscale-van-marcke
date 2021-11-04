@@ -1,8 +1,4 @@
 :host {
-	.storybook-background {
-		background-color: var(--componentBackgroundColor);
-	}
-
 	.disabled-link,
 	.enabled-link {
 		text-decoration: none;
@@ -17,9 +13,6 @@
         }
 
 		.overlay {
-
-			&-content {}
-
 			&.product {
 				.product-name {
                     font-size: 1.6rem;

@@ -1,4 +1,8 @@
 :host {
+	.storybook-background {
+		background-color: var(--componentBackgroundColor);
+	}
+
     .title {
         @include font-size(26);
         line-height: 1.22;
