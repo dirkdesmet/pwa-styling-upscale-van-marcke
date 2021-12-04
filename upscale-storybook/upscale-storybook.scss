@@ -1,34 +1,34 @@
 :host {
 	.storybook-background {
-		background-color: var(--componentBackgroundColor);
+		background-color: var(--storybookBackgroundColor);
 	}
 
-    .title {
-        @include font-size(26);
-        line-height: 1.22;
-        font-weight: 700;
-    
-        @media screen and (max-width: 56.25em) {
-            @include font-size(24);
-            line-height: 1.15;
-        }
-    }
+	.title {
+		@include font-size(26);
+		line-height: 1.22;
+		font-weight: 700;
+
+		@media screen and (max-width: 56.25em) {
+			@include font-size(24);
+			line-height: 1.15;
+		}
+	}
 
 	.storyBookProgressBar {
 		display: flex;
-        justify-content: center;
+		justify-content: center;
 		height: 5px;
-        margin: 15px 0;
+		margin: 15px 0;
 
 		span {
-            flex: none;
-            width: 10px;
+			flex: none;
+			width: 10px;
 			height: 10px;
-            border-radius: 50%;
+			border-radius: 50%;
 			transition: background-color 0.3s;
-            &:not(:last-of-type) {
-                margin-right: 10px;
-            }
+			&:not(:last-of-type) {
+				margin-right: 10px;
+			}
 			&.storybook-slider-indicator {
 				&-active {
 					background-color: var(--carouselIndicatorActive) !important;

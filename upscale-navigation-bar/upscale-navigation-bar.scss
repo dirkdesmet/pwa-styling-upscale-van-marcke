@@ -1,15 +1,47 @@
 :host {
-	nav {
-		ul {
-			li {
-				a {
-					@include button($background-color: white, $border-radius: 2px);
-					
-					.item-icon {
-						height: 24px;
+	&upscale-navigation-bar {
+		nav {
+			ul {
+				li {
+					a {
+						@include button($background-color: white, $border-radius: 2px);
+						border-radius: 5px;
+						background-color: var(--navigationBarBackgroundColor);
+						color: var(--navigationBarColor);
+						&:hover {
+							background-color: var(--navigationBarBackgroundColorHover);
+							color: var(--navigationBarColorHover);
+							.item-icon {
+								filter: invert(1);
+							}
+							upscale-shopping-cart-icon::ng-deep {
+								.shopping-cart-icon__cart-icon-image {
+									filter: invert(1);
+								}
+								.shopping-cart-icon__badge {
+									background-color: var(--navigationBarColorHover);
+									.shopping-cart-icon__badge-count {
+										color: var(--navigationBarBackgroundColorHover);
+									}
+								}
+							}
+						}
+
+						.item-icon {
+							height: 24px;
+							&:hover {
+								filter: invert(1);
+							}
+						}
+
+						.shopping-cart-icon__cart-icon-image {
+							&:hover {
+								filter: invert(1);
+							}
+						}
 					}
-                }
-            }
-        }
-    }
+				}
+			}
+		}
+	}
 }

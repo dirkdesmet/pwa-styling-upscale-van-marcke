@@ -1,8 +1,8 @@
-@import url('https://dirkds.be/fonts/butler/style.css');
+@import url("https://dirkds.be/fonts/butler/style.css");
 
 :host {
     .headline {
-        font-family: 'Butler Medium';
+        font-family: "Butler Medium";
         font-size: 4.8rem;
         font-weight: normal;
         letter-spacing: 0.7rem;
@@ -11,7 +11,7 @@
         margin: 16px 0;
     }
 
-    ::ng-deep upscale-aspect-ratio {  
+    ::ng-deep upscale-aspect-ratio {
         .text {
             font-family: var(--generalFont);
             line-height: 1.84rem;
@@ -20,25 +20,26 @@
                 margin: 16px 0;
             }
         }
-        
+
         .mat-stroked-button {
             font-family: var(--buttonFont);
             font-weight: 700;
             font-size: 1.6rem;
             line-height: 48px;
-			padding: 0 20px;
+            padding: 0 20px;
             background-color: var(--buttonSecondaryBackgroundColor);
             border-color: var(--buttonSecondaryBorderColor);
             color: var(--buttonSecondaryColor);
             border-radius: 0;
             &::after {
-                content: '';
+                content: "";
                 display: inline-block;
                 width: 24px;
                 height: 24px;
-                background: url('https://dirkds.be/projects/van_marcke/document.svg') no-repeat 0 0 / 24px 24px transparent;
+                background: url("https://dirkds.be/projects/van_marcke/document.svg") no-repeat 0 0 / 24px 24px
+                    transparent;
                 transform: translate(5px, 7px);
-				margin-right: 2px;
+                margin-right: 2px;
             }
         }
     }

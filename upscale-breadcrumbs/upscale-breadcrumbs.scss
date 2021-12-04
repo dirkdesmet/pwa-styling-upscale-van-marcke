@@ -1,15 +1,14 @@
 :host {
-
 	.breadcrumbs {
 		&__arrow {
 			color: var(--breadcrumbsSplitterColor);
 			@include base-font-size;
 			visibility: hidden;
 			width: 10px;
-			
+
 			&::before {
-				content: 'keyboard_arrow_right';
-				font-family: 'Material Icons';
+				content: "keyboard_arrow_right";
+				font-family: "Material Icons";
 				visibility: visible;
 			}
 		}
@@ -20,7 +19,8 @@
 			margin: 0 7px 0 0;
 		}
 
-		&__link, &__text {
+		&__link,
+		&__text {
 			font-family: var(--breadcrumbsFont);
 		}
 	}

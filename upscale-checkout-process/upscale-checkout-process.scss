@@ -1,0 +1,12 @@
+:host {
+  .addCoupon-button,
+  .removeCoupon-button {
+    border-color: var(--buttonSecondaryBorderColor);
+    background-color: var(--buttonSecondaryBackgroundColor);
+
+    .button-label {
+      font-weight: 700;
+      color: var(--buttonSecondaryColor);
+    }
+  }
+}

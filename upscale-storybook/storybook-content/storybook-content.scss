@@ -1,37 +1,52 @@
 :host {
-	.disabled-link,
-	.enabled-link {
-		text-decoration: none;
-	}
+    .disabled-link,
+    .enabled-link {
+        text-decoration: none;
+    }
 
-	.storybook-content {
+    .storybook-content {
         background-color: var(--imageBackgroundColor);
 
         upscale-aspect-ratio-image {
-            transform: translate(0, -66px);
-            margin: 30px 0 0;
+            margin: 150px 0 70px;
         }
 
-		.overlay {
-			&.product {
-				.product-name {
+        .overlay {
+            &.product {
+                .product-name {
                     font-size: 1.6rem;
                     font-weight: 700 !important;
                 }
 
-				.price {
-					.selling-price {
+                .price {
+                    .selling-price {
                         margin: 10px 0;
-					}
+                    }
                 }
 
-				.buy-buttons {
-                    padding: 14px 10px;
-					transform: translate(0, 180px);
-                    flex-direction: row-reverse;
+                .storybook-product-link-text-button {
+                    margin: 12px 0 -67px;
+                    min-width: auto;
+                }
 
-					upscale-one-tap-buy-button {
-						max-width: calc(100% / 3 * 2);
+                .storybook-product-content-name {
+                    margin-top: 80px;
+                }
+
+                .buy-buttons {
+                    padding: 14px 10px;
+                    flex-direction: row-reverse;
+                    margin-top: auto;
+                    @media (min-width: 600px) {
+                        padding: 14px 0;
+                        flex-direction: row;
+                        .storybook-add-to-cart-button {
+                            margin-right: 12px;
+                        }
+                    }
+
+                    upscale-one-tap-buy-button {
+                        max-width: calc(100% / 3 * 2);
                         font-family: sans-serif;
                         font-weight: 700;
                         font-size: 1.6rem;
@@ -41,8 +56,31 @@
                         background-color: var(--buttonSecondaryBackgroundColor);
                         border: 1px solid var(--buttonSecondaryBorderColor);
                         color: var(--buttonSecondaryColor);
-					}
-				}
+                    }
+                }
+            }
+
+            &.above {
+                position: absolute;
+                height: 100%;
+                .overlay-content {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
+.upscale-medium,
+.upscale-small,
+.upscale-extra-small {
+    :host {
+        .storybook-content {
+            .overlay {
+                .link-text {
+                    height: auto;
+                    min-width: auto;
+                }
             }
         }
     }

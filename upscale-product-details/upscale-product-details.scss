@@ -3,16 +3,15 @@
     font-family: var(--pdpPriceFont);
   }
   .quantity-selector {
-		upscale-product-quantity-selector {
-			align-items: center;
-		}
+    upscale-product-quantity-selector {
+      align-items: center;
+    }
   }
 }
 
 :host.in-edition {
-	&.image-carousel-view {
-
-		.title {
+  &.image-carousel-view {
+    .title {
       font-family: var(--pdpTitleFont);
       font-weight: 400;
       font-size: 2.4rem;

@@ -1,12 +1,13 @@
 :host {
   &.text-button {
     font-family: var(--buttonFont);
+    background-color: var(--buttonPrimaryBackgroundColor);
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 24px;
       height: 24px;
-      background: url('https://dirkds.be/projects/van_marcke/shopping-cart_white.svg') no-repeat 0 0 / 24px 24px transparent;
+      background: url("https://dirkds.be/projects/van_marcke/shopping-cart_white.svg") no-repeat 0 0 / 24px 24px transparent;
       margin-right: 5px;
     }
   }

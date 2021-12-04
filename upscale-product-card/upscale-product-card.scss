@@ -5,15 +5,15 @@
       color: var(--cartRemoveButtonColor);
 
       &:hover {
-				background: none;
+        background: none;
         color: var(--cartRemoveButtonHoverColor);
-			}
+      }
 
       .button-label {
         font-size: 1.6rem;
-				text-decoration: underline;
+        text-decoration: underline;
         padding: 0;
-			}
+      }
     }
   }
 }

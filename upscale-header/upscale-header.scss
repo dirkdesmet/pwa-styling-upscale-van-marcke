@@ -2,9 +2,12 @@
     background: white;
 
     .header {
-		&__hamburger {
-			@include button($background-color: transparent, $color: var(--mobileMenuIconColor));
+        &__hamburger {
+            @include button($background-color: transparent, $color: var(--mobileMenuIconColor));
             margin: 0 12px 0 3px;
+            &:hover {
+				background-color: transparent !important;
+			}
             img {
                 filter: invert(1);
             }
