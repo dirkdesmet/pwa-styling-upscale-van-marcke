@@ -1,8 +1,6 @@
-@import url("https://dirkds.be/fonts/butler/style.css");
-
 :host {
     .headline {
-        font-family: "Butler Medium";
+        font-family: "var(--contentSlotCustomFont)";
         font-size: 4.8rem;
         font-weight: normal;
         letter-spacing: 0.7rem;
@@ -36,8 +34,7 @@
                 display: inline-block;
                 width: 24px;
                 height: 24px;
-                background: url("https://dirkds.be/projects/van_marcke/document.svg") no-repeat 0 0 / 24px 24px
-                    transparent;
+                background: var(--iconDocument);
                 transform: translate(5px, 7px);
                 margin-right: 2px;
             }

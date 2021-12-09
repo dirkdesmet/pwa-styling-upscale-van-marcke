@@ -1,0 +1,141 @@
+<div id="footer">
+  <ul>
+    <li>
+      <strong>Catégories</strong>
+      <ul>
+        <li><a href="">Tous les Accessoires</a></li>
+        <li><a href="/fr-FR/browse/-/bathroom-accessories">Accessoires de salle de bain</a></li>
+        <li><a href="">Collections</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>À propos de nous</strong>
+      <ul>
+        <li><a href="">Notre histoire</a></li>
+        <li><a href="">Inspiration</a></li>
+        <li><a href="">Prochaines étapes</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Services</strong>
+      <ul>
+        <li><a href="">Livraison</a></li>
+        <li><a href="">Retour</a></li>
+        <li><a href="">Service Clients</a></li>
+        <li><a href="">Contactez-nous</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Language</strong>
+      <ul>
+        <li>
+          <ol>
+            <li><a href="/nl-NL/">Nederlands</a></li>
+            <li><a href="/fr-FR/">Français</a></li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Connect</strong>
+      <ul class="socials">
+        <li>
+          <a href="#twitter">
+            <img src="https://dirkds.be/projects/van_marcke/twitter.svg" alt="Twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.facebook.com/VanMarckeInspirations">
+            <img src="https://dirkds.be/projects/van_marcke/facebook.svg" alt="Facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/van_marcke/">
+            <img src="https://dirkds.be/projects/van_marcke/instagram.svg" alt="Instagram" />
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<style>
+  #footer {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  #footer strong {
+    font-size: 16px;
+    color: var(--footerHeaderColor);
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: var(--footerLinkColor)
+  }
+
+  #footer a:hover {
+    text-decoration: underline;
+  }
+
+  #footer ul,
+  #footer ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer li {
+    list-style-type: none;
+  }
+
+  #footer li ul {
+    margin-bottom: 16px;
+  }
+
+  #footer ul li ul li:not(:last-of-type) {
+    margin-bottom: 7px;
+  }
+
+  #footer .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer .socials a {
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    display: inline-block;
+  }
+
+  #footer .socials a:hover {
+    background-color: var(--footerLinkColor);
+  }
+
+  #footer .socials a:hover img {
+    filter: invert(1);
+  }
+
+  #footer .socials li:not(:last-of-type) {
+    margin-right: 2px;
+  }
+
+  @media (min-width: 1200px) {
+    #footer>ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    #footer>ul>li {
+      margin: 0 40px;
+    }
+
+    #footer li {
+      text-align: left;
+    }
+  }
+</style>

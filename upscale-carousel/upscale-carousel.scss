@@ -1,0 +1,13 @@
+:host {
+  ::ng-deep {
+    &upscale-image {
+      width: 100%;
+    }
+    &upscale-aspect-ratio-image.upscale-generic-image {
+      height: calc(9 / 16 * 100vh);
+    }
+    &upscale-video .video-container {
+      padding-top: calc(9 / 16 * 100vh);
+    }
+  }
+}

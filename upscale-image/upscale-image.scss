@@ -1,6 +1,10 @@
 :host {
     background-color: var(--imageBackgroundColor);
 
+    &.row-item {
+        width: 100%;
+    }
+
     .component-headline {
         @include font-size(26);
         line-height: 1.22;
