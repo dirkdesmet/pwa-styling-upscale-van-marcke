@@ -8,3 +8,6 @@ https://help.sap.com/viewer/0160c41e0de84b218d05bc1185213d1d/SHIP/en-US/dff01d1e
 ```bash
 cd caas2-webapp/ && nvm use 14.15 && npm start
 ```
+
+## Note:
+All the content of the html files is used in the SAP Upscale Workbench under `Content Management > Custom HTML > footer`
