@@ -1,12 +1,12 @@
 :host {
   ::ng-deep {
-    &upscale-image {
+    upscale-image {
       width: 100%;
     }
-    &upscale-generic-image.generic-image {
+    upscale-generic-image.generic-image {
       padding-top: calc(9 / 16 * 100vh);
     }
-    &upscale-video .video-container {
+    upscale-video .video-container {
       padding-top: calc(9 / 16 * 100vh);
     }
   }
