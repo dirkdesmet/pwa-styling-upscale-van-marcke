@@ -10,4 +10,4 @@ cd caas2-webapp/ && nvm use 14.15 && npm start
 ```
 
 ## Note:
-All the content of the html files is used in the SAP Upscale Workbench under `Content Management > Custom HTML > footer`
+All the content of the html files is used in the SAP Upscale Workbench under `Content Management > Custom HTML > footer OR Van Marcke styling variables`
